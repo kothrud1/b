@@ -1,0 +1,7 @@
+$start-dfs.sh
+$start-yarn.sh
+
+$hadoop fs -mkdir /test
+$hadoop fs -put /home/itexam/Mapreduce_Program/test1 /test
+
+$hadoop jar WordCount.jar /test/test1 /test/output
